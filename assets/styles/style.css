@@ -1,0 +1,580 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.container {
+    padding: 0px 20px;
+}
+
+.image .two .words .top svg,
+.four {
+    display: none;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+.part-one {
+    display: grid;
+    grid-template-columns: 1fr 7fr 1.2fr;
+    height: 8svh;
+    background-color: #FFFFFC;
+    margin-inline: auto;
+    padding-top: 15px;
+    padding-bottom: 8svh;
+
+}
+
+.links {
+    margin-inline: auto;
+    padding-top: 15px;
+
+}
+
+
+.dream img {
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: #25292C;
+    padding-left: 30px;
+
+}
+
+.sign {
+    color: #1576D6;
+    display: grid;
+    grid-template-columns: 1.7fr 1.7fr;
+    height: 50px;
+    gap: 10px;
+}
+
+.sign .one {
+    border: 1px solid #1576D6;
+    border-radius: 8px;
+    color: #1576D6;
+    background-color: #F2F2F2;
+}
+
+.sign .two {
+    background-color: #1576D6;
+    color: #FFFFFC;
+    border-radius: 8px;
+
+}
+
+/*             */
+
+.words {
+    background-image: url(../images/one.png);
+    background-repeat: no-repeat;
+    height: 100svh;
+    padding-top: 280px;
+    background-size: cover;
+}
+
+.words h1,
+.words p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-inline: auto;
+    color: #FFFFFC;
+    font-size: 20px;
+}
+
+h1 {
+    width: 40%;
+    height: 10svh;
+}
+
+p {
+    width: 40%;
+    height: 5svh;
+    font-size: 20px;
+}
+
+.diff .svgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+.diff .svgs {
+    margin-top: 355px;
+    background-color: #FFFFFC;
+    border-radius: 8px;
+    width: 80%;
+    height: 9svh;
+    margin-inline: auto;
+    box-shadow: 0px 1px 16px 0px rgb(155, 149, 149);
+}
+
+.diff .sq button,
+.diff .sq input {
+    margin-top: 7px;
+    margin-left: 15px;
+    font-size: 13px;
+    height: 7svh;
+    width: 91%;
+    border: 1px solid rgb(239, 235, 235);
+    border-radius: 6px;
+    background-color: #F2F2F2;
+}
+
+input::placeholder {
+    color: #212122;
+    padding: 12px;
+}
+
+.diff .sq .search {
+    background-color: #1576D6;
+    color: #F2F2F2;
+}
+
+input {
+    padding-left: 18px;
+}
+
+.sq svg {
+    position: absolute;
+    margin-top: 23px;
+    margin-left: 20px;
+}
+
+/*                    */
+
+.yellow {
+    margin-top: 100px;
+}
+
+.all {
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+    background-color: #F4C123;
+    height: 8svh;
+    padding: 18px;
+    gap: 10px;
+    border-radius: 10px;
+
+}
+
+.all .wor {
+    padding-top: 5px;
+}
+
+.all .sv svg {
+    padding-bottom: 4px;
+}
+
+.all a {
+    color: #1576D6;
+}
+
+/*                */
+
+.slides {
+    margin-top: 60px;
+}
+
+.why {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 8fr 8fr 8fr 8fr;
+    gap: 20px;
+
+}
+
+.cards p {
+    width: 90%;
+}
+
+.cards svg {
+    margin-left: 55px;
+}
+
+
+.why h3 {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+/*                      */
+
+.photos {
+    padding-top: 70px;
+}
+
+.main {
+    padding-bottom: 30px;
+}
+
+.photos .pho .main p,
+.why .cards p {
+    color: #333333;
+}
+
+.places {
+    display: grid;
+    grid-template-columns: 8fr 8fr 8fr 8fr;
+    gap: 20px;
+}
+
+.country img {
+    width: 100%;
+    height: 35svh;
+    border-radius: 10px;
+}
+
+.country h2,
+.country p {
+    padding-top: 10px;
+}
+
+
+
+/* media guery */
+
+@media(max-width: 1440px) {
+    .diff .svgs {
+        margin-top: 300px;
+        width: 70%;
+    }
+
+    .all .wor p {
+        width: 100%;
+    }
+
+}
+
+
+@media(max-width: 1024px) {
+
+    .container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .part-one {
+        display: grid;
+        grid-template-columns: 0.1fr 2.4fr 0.8fr;
+    }
+
+    .dream img {
+        width: 190px;
+    }
+
+    .diff .svgs {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        width: 80%;
+        margin-top: 220px;
+        height: 9.3svh;
+    }
+
+    input::placeholder {
+        font-size: 10px;
+        padding-left: 5px;
+    }
+
+    .sq svg {
+        margin-top: 18px;
+        margin-left: 18px;
+    }
+
+    .diff .svgs .sq {
+        width: 95%;
+    }
+
+    .diff {
+        width: 94%;
+        margin-inline: auto;
+    }
+
+    .all .wor p {
+        width: 100%;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    .all {
+        height: 10svh;
+    }
+
+    .part-one {
+        padding: 10px;
+        height: 10svh;
+    }
+
+
+    .photos {
+        margin-top: 50px;
+
+    }
+
+    .photos .pho .main p {
+        width: 60%;
+    }
+
+}
+
+@media(max-width: 768px) {
+    .part-one {
+        grid-template-columns: 0fr 2.9fr 0.9fr;
+    }
+
+    .dream img {
+        width: 150px;
+    }
+
+    .diff .svgs {
+        height: 9svh;
+        width: 100%;
+    }
+
+    .diff .svgs button .diff .svgs input {
+        margin: 5px 0px 0px 0px;
+        font-size: 10px;
+
+    }
+
+    .diff {
+        width: 85%;
+    }
+
+    .diff .sq {
+        margin-left: -5px;
+    }
+
+    input::placeholder {
+        font-size: 8px;
+    }
+
+    .diff .sq svg {
+        height: 18px;
+        margin-top: 21px;
+    }
+
+
+    .why {
+        display: grid;
+        grid-template-columns: 5fr 5fr;
+    }
+
+    .why .cards {
+        margin-bottom: 20px;
+    }
+
+    .why .cards svg {
+        margin: 0;
+        width: 50%;
+    }
+
+    .why .cards p {
+        width: 100%;
+    }
+
+    .photos .pho .main h1 {
+        width: 60%;
+    }
+
+    .photos .pho .main p {
+        width: 80%;
+    }
+
+    .photos .pho .places {
+        grid-template-columns: 3fr 3fr;
+    }
+
+}
+
+@media(max-width: 450px) {
+
+    .image .two .words .top svg,
+    .four {
+        display: inline-block;
+    }
+
+    .part-one {
+        display: none;
+    }
+
+
+    .navbar {
+        position: static;
+    }
+
+    .container {
+        margin: 0;
+        padding: 0;
+    }
+
+    .image .two {
+        margin: 0;
+    }
+
+    .diff .svgs {
+        width: 100%;
+    }
+
+    .yellow .all {
+        padding-bottom: 70px;
+
+    }
+
+    .yellow {
+        width: 93%;
+    }
+
+    .yellow .all .wor p {
+        font-size: 13px;
+    }
+
+    .words .top {
+        display: grid;
+        grid-template-columns: 10fr 2fr;
+        margin-top: -230px;
+        margin-left: 14px;
+    }
+
+    .words .bottom {
+        display: grid;
+        width: 100%;
+        margin-top: 400px;
+
+    }
+
+    .words .bottom h1 {
+        justify-content: start;
+        padding-left: 15px;
+        padding-top: 15px;
+
+    }
+
+    .words .bottom p {
+        justify-content: start;
+        text-align: left;
+        font-size: 15px;
+        padding-left: 15px;
+    }
+
+    .words .bottom h1,
+    .words .bottom p {
+        width: 100%;
+    }
+
+    .diff {
+        width: 100%;
+    }
+
+    .diff .svgs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 70px;
+        box-shadow: 0px 0px 0px 0px;
+    }
+
+    input::placeholder {
+        padding-left: 10px;
+    }
+
+    .diff .svgs .sq .search {
+        width: 200%;
+    }
+
+    .yellow {
+        margin-top: 200px;
+    }
+
+    .all {
+        height: 11svh;
+    }
+
+    .all .wor p {
+        font-size: 15px;
+        margin-top: 11px;
+    }
+
+    .all .sv svg {
+        margin-top: 11px;
+        margin-left: 10px;
+    }
+
+    .qu h1 {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .why {
+        grid-template-columns: 2fr;
+        padding: 0px 30px;
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    .why .cards svg {
+        margin: 0;
+    }
+
+    .why .cards p {
+        width: 100%;
+
+    }
+
+
+    .photos .pho .main h1 {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .photos .pho .main p {
+        margin-bottom: 30px;
+    }
+
+    .photos .pho .places {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        max-width: 450px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+}
+
+@media(max-width: 380px) {
+
+    .yellow {
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+
+    .why .cards {
+        margin-top: 40px;
+    }
+
+    .pho .main h1 {
+        font-size: 24px;
+        margin-bottom: -20px;
+    }
+
+}
